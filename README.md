@@ -26,3 +26,5 @@ User-Friendly Design: Enjoy an intuitive and user-friendly interface for a seaml
 Thunder Security is committed to providing cutting-edge security solutions, and this app is your ally in the ongoing battle against digital threats. Download the app today to take control of your online security and stay one step ahead of cyber adversaries. ⚡🛡️📲
 
 Download -
+Android App
+https://github.com/iamtejas23/thunder/releases/tag/app
