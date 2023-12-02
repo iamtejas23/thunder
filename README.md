@@ -1,23 +1,25 @@
-﻿# React Native App
+Thunder Security App
+The Thunder Security App is a comprehensive mobile application designed to enhance your digital security by providing real-time alerts and insights into potential threats to your email and password security. The app features multiple screens to keep you informed and educated about the state of your online security.
 
-This is a simple React Native app created for [brief description of the app's purpose].
+Screens:
+1. Email Breached Found Screen
+Stay informed about potential email breaches with the Email Breached Found screen. This screen notifies users about any compromised email accounts, helping them take immediate action to secure their digital identity. The Thunder Security App utilizes advanced algorithms to detect breaches and provides clear, actionable information for users.
 
-## Getting Started
+2. Password Breach Screen
+The Password Breach screen is dedicated to monitoring the security of your passwords. In the event of a password breach, the app delivers timely alerts, guiding users on necessary steps to update and strengthen their passwords. Your online accounts are only as secure as your passwords, and Thunder Security ensures you are promptly informed of any vulnerabilities.
 
-Follow these instructions to get a copy of the project up and running on your local machine for development and testing purposes.
+3. Live Threat Map Screen
+Visualize the global threat landscape with the Live Threat Map screen. This interactive map provides real-time insights into cyber threats and attacks worldwide. Users can explore the geographical distribution of threats, helping them stay vigilant and understand the broader context of digital security issues.
 
-### Prerequisites
+4. Lessons Screen
+Education is a key component of digital security. The Lessons screen offers valuable resources and educational content to empower users with knowledge about online threats, security best practices, and proactive measures. Stay ahead of emerging threats by learning from expert insights and practical tips directly within the Thunder Security App.
 
-Make sure you have the following software installed:
+Key Features:
+Real-time Alerts: Receive instant notifications about email and password breaches to take immediate action.
 
-- [Node.js](https://nodejs.org/)
-- [npm](https://www.npmjs.com/) or [Yarn](https://yarnpkg.com/)
-- [Expo CLI](https://docs.expo.dev/get-started/installation/)
+Interactive Threat Map: Explore a dynamic map showcasing live cyber threats on a global scale.
 
-### Installing
+Educational Content: Access informative lessons to enhance your understanding of digital security.
 
-1. Clone the repository to your local machine:
-
-   ```bash
-   git clone https://github.com/your-username/react-native-app.git
+User-Friendly Design: Enjoy an intuitive and user-friendly interface for a seamless experience.
 
