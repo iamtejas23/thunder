@@ -9,22 +9,33 @@
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#000000"
     },
     "assetBundlePatterns": [
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.tejas8787.thunder"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      }
+        "backgroundColor": "#000000"
+      },
+      "package": "com.tejas8787.thunder"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "339d5cbd-f442-4ec2-8c5e-e235a4cb0dd4"
+      }
+    },
+    "runtimeVersion": "49.0.0",
+    "updates": {
+      "url": "https://u.expo.dev/339d5cbd-f442-4ec2-8c5e-e235a4cb0dd4"
     }
   }
 }

@@ -33,3 +33,6 @@ yarn-error.*
 
 # typescript
 *.tsbuildinfo
+
+#key
+'hibp-api-key': 'f18e610d7de04fdd9e554a87117b16a3', // Replace with your actual API key
