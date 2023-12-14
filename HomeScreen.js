@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import { View, Text, TextInput, Button, ScrollView, StyleSheet, Image } from 'react-native';
 import axios from 'axios';
-
-
 import YourImage from './assets/email.png';
 
 const EmailBreachChecker = () => {
@@ -30,10 +28,13 @@ const EmailBreachChecker = () => {
       } else if (response.status === 404) {
         setBreachResult([{ Name: 'No breaches found', Description: 'This email has not been breached.' }]);
       } else {
+        // Handle other status codes
         setBreachResult([]);
+        console.error(`Error checking the email. Status Code: ${response.status}`);
       }
     } catch (error) {
-      setBreachResult([]);
+      // Display an error message to the user
+      setBreachResult([{ Name: 'Error', Description: 'An error occurred while checking the email.' }]);
       console.error('Error checking the email:', error);
     } finally {
       setLoading(false);
@@ -72,39 +73,72 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     padding: 16,
+    backgroundColor: '#f5f5f5', // Light background color
   },
   header: {
     alignItems: 'center',
   },
   logo: {
-    width: 150, // Adjust the width as needed
-    height: 150, // Adjust the height as needed
-    marginBottom:18,
-
+    width: 150,
+    height: 150,
+    marginBottom: 18,
+    borderRadius: 75, // Make the logo circular
   },
   title: {
-    fontSize: 20,
+    fontSize: 24,
     fontWeight: 'bold',
     marginBottom: 10,
+    color: '#000000', // Blue color
+    textAlign: 'center', // Center the text horizontally
   },
   input: {
     width: '100%',
-    borderWidth: 1,
-    borderColor: '#0074E4', // Add a custom color
-    padding: 10,
-    marginBottom: 10,
-    borderRadius: 5, // Add rounded corners
+    borderWidth: 2,
+    borderColor: '#000000',
+    padding: 12,
+    marginBottom: 16,
+    borderRadius: 8,
+    fontSize: 16,
+    backgroundColor: '#fff', // White background
+    color: '#333', // Dark text color
+  },
+  button: {
+    backgroundColor: '#0074E4',
+    padding: 14,
+    borderRadius: 8,
+  },
+  buttonText: {
+    color: '#fff',
+    fontSize: 18,
+    fontWeight: 'bold',
+    textAlign: 'center',
   },
   scrollView: {
     width: '100%',
+    marginTop: 10,
   },
   breachItem: {
-    padding: 10,
-    marginBottom: 5,
-    marginTop:15,
-    backgroundColor: '#ECECEC',
-    borderRadius: 5, // Add rounded corners
+    padding: 16,
+    marginBottom: 10,
+    backgroundColor: '#fff',
+    borderRadius: 8,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.3,
+    shadowRadius: 2,
+    elevation: 2,
+  },
+  breachName: {
+    fontSize: 18,
+    fontWeight: 'bold',
+    marginBottom: 6,
+    color: '#0074E4',
+  },
+  breachDescription: {
+    fontSize: 16,
+    color: '#333',
   },
 });
+
 
 export default EmailBreachChecker;
