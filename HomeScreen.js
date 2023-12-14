@@ -15,13 +15,7 @@ const EmailBreachChecker = () => {
 
     setLoading(true);
 
-    try {
-      const response = await axios.get(`https://haveibeenpwned.com/api/v3/breachedaccount/${email}`, {
-        headers: {
-          'User-Agent': 'YourApp/1.0',
-          'hibp-api-key': 'f18e610d7de04fdd9e554a87117b16a3', 
-        },
-      });
+   
 
       if (response.status === 200) {
         setBreachResult(response.data);
